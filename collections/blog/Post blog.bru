@@ -1,0 +1,24 @@
+meta {
+  name: Post blog
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3003/api/blogs
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImdyYWJpZWwiLCJpZCI6IjY2MjY2N2IyOTQ0YTZhZTQ5Y2VkOTk2ZSIsImlhdCI6MTcxMzgxNjM4NywiZXhwIjoxNzEzODE5OTg3fQ.pTrNKm3Bc74ALY2POyEDJ-evJTbHEMdQ2HO-t29zFZ4
+}
+
+body:json {
+  {
+      "title": "Blog306",
+      "author": "Grabiel Gutierres",
+      "url": "http://blog306.com",
+      "likes": 20
+  }
+}
